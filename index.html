@@ -67,12 +67,12 @@
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* HERO HOVER: Glow & border turn GREEN (#22c55e), typing text turns GREEN (#22c55e) on hover, description text color stays fixed */
+        /* HERO HOVER: Glow & border turn GREEN (#22c55e), typing text turns #ff6D00 on hover, description text color stays fixed */
         .hero-hover {
             transition: all 0.25s ease-in-out;
         }
         .hero-hover:hover #typed-text {
-            color: var(--accent-green) !important;
+            color: #ff6D00 !important;
         }
         .hero-hover:hover {
             border-color: var(--accent-green) !important;
@@ -222,9 +222,9 @@
         <div class="w-full flex items-center justify-between gap-4">
             <!-- Logo Container with matching font style -->
             <div class="flex items-center gap-3 select-none">
-                <a href="../../" class="flex items-center shrink-0 py-1 group cursor-pointer" aria-label="Tabspace Playables Home">
-                    <img src="./images/logo.png" alt="Tabspace Presentations Logo" class="h-16 md:h-20 w-auto object-contain block opacity-90 group-hover:opacity-100 transition-opacity" />
-                </a>
+                <div class="flex items-center shrink-0 py-1 group cursor-pointer" aria-label="Tabspace Playables Logo Container">
+                    <img src="./images/logo.png" alt="Tabspace Presentations Logo" class="h-16 md:h-20 w-auto object-contain block opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+                </div>
                 <span class="text-zinc-500 text-lg md:text-2xl font-light">/ Playables</span>
             </div>
 
@@ -242,7 +242,7 @@
         <!-- HERO SECTION WITH TYPING ANIMATION -->
         <section class="card-section hero-hover p-8 md:p-14 text-center flex flex-col items-center justify-center space-y-6">
             <h1 class="text-3xl md:text-5xl lg:text-6xl tracking-tight leading-tight">
-                <span class="text-white" style="color: #ffffff;">Welcome to</span> <span class="text-brand-green" style="color: #22c55e;">Playables</span>
+                <span style="color: #ffffff;">Welcome to</span> <span style="color: #ff6D00;">Tabspace</span> <span style="color: #22c55e;">Playables</span>
             </h1>
             <div class="text-xl md:text-3xl text-zinc-300 font-medium h-12 flex items-center justify-center">
                 <span id="typed-text" class="text-zinc-300 transition-colors duration-200"></span><span class="typing-cursor" id="typed-cursor">&nbsp;</span>
@@ -343,7 +343,7 @@
 
     <!-- SCRIPTS: TYPING ANIMATION & LOAD MORE LOGIC -->
     <script>
-        const words = ["Tic Tac Toe", "Sudoku", "Gomoku", "2048 Puzzle", "Minesweeper", "Viper Snake", "Wordle Clone"];
+        const words = ["Tic Tac Toe", "Sudoku", "Gomoku", "2048 Puzzle", "Typing Speed Test", "Chess", "Checkers Classic"];
         let i = 0;
 
         function typingEffect() {
