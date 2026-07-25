@@ -10,5 +10,4 @@ window.cGames = [
     { name: "Cricket Hero", path: "play/cricket-hero/" },
     { name: "Chess", path: "play/chess/" },
     { name: "Tower of Hanoi", path: "play/tower-of-hanoi/" },
-    { name: "Checkers", path: "play/checkers/" },
 ];
