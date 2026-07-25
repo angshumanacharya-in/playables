@@ -8,6 +8,6 @@ window.cGames = [
     { name: "Crypto Tycoon", path: "play/crypto-tycoon/" },
     { name: "Cube Runner", path: "play/cube-runner/" },
     { name: "Cricket Hero", path: "play/cricket-hero/" },
-    { name: "Cyberpunk Racer", path: "play/cyberpunk-racer/" },
-    { name: "Card Solitaire", path: "play/card-solitaire/" }
+    { name: "Chess", path: "play/chess/" },
+    { name: "Tower of Hanoi", path: "play/tower-of-hanoi/" },
 ];
